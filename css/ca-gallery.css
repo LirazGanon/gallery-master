@@ -918,6 +918,11 @@ header.masthead .intro-text .intro-heading {
 }
 
 @media (min-width: 768px) {
+    .proj-main-container{
+        width: 80%;
+        margin: auto ;
+    }
+
     .timeline:before {
         left: 50%;
     }
@@ -1238,8 +1243,20 @@ fieldset[disabled] .btn-xl:hover {
     margin-left: 0;
 }
 
-.container {
+.proj-main-container {
     padding-right: 0;
     padding-left: 0;
 }
+
+.project-details img{
+    box-shadow: 4px 4px 16px 3px rgba(0,0,0,0.58);
+}
+
+.tags{
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+
 
