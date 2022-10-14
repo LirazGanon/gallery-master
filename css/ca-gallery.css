@@ -490,7 +490,7 @@ body {
 
 
 .offcanvas-btn {
-    z-index: 100000;
+    z-index: 100;
     position: fixed;
     bottom: 8%;
     right: 3%;
@@ -1349,8 +1349,13 @@ ion-icon {
 
 article.portfolio-item {
     border: #2222221b 1px solid;
+    background-color: #fff;
 }
 
 .proj-container {
     justify-content: center;
+}
+
+.portfolio-caption{
+    border-top: rgb(209, 209, 209) 1px solid;
 }
