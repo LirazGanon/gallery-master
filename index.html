@@ -150,16 +150,19 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Specialities</a>
+            <a class="nav-link js-scroll-trigger" href="#services" data-trans="specialities">Specialities</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            <a class="nav-link js-scroll-trigger" href="#portfolio" data-trans="portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#me">Me</a>
+            <a class="nav-link js-scroll-trigger" href="#me" data-trans="me" >Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" onclick="openCanvas()">Contact</a>
+            <a class="nav-link js-scroll-trigger" onclick="openCanvas()" data-trans="contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a  class="nav-link js-scroll-trigger nav-link-lang" onclick="onSetLang(gCurrLang)"><img class="lang-flag" src="img/IL.png" alt="lang" title="שנה שפה"></a>
           </li>
         </ul>
       </div>
@@ -170,8 +173,8 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        <div class="intro-lead-in">Welcome To my Portfolio</div>
-        <div class="intro-heading">It's Nice To Meet You</div>
+        <div class="intro-lead-in" data-trans="header-secondary-title">Welcome To my Portfolio</div>
+        <div class="intro-heading" data-trans="header-main-title">It's Nice To Meet You</div>
         <div class="header-text-animation">
           <h6>
             <span>always be</span>
@@ -182,7 +185,7 @@
             </div>
           </h6>
         </div>
-        <a class="btn btn-xl js-scroll-trigger" href="#services">Tell Me More</a>
+        <a class="btn btn-xl js-scroll-trigger" href="#services" data-trans="tell-me-more">Tell Me More</a>
       </div>
     </div>
   </header>
@@ -193,8 +196,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Specialities</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h2 class="section-heading" data-trans="specialities">Specialities</h2>
+          <h3 class="section-subheading text-muted" data-trans="specialities-desc">Lorem ipsum dolor sit amet consectetur.</h3>
         </div>
       </div>
       <div class="row text-center">
@@ -204,7 +207,7 @@
             <ion-icon name="logo-javascript"></ion-icon>
           </span>
           <h4 class="service-heading">JavaScript</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
+          <p class="text-muted" data-trans="javascript-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
             quo inventore harum ex
             magni, dicta impedit.</p>
         </div>
@@ -214,7 +217,7 @@
             <ion-icon name="logo-react"></ion-icon>
           </span>
           <h4 class="service-heading">React</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
+          <p class="text-muted"  data-trans="react-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
             quo inventore harum ex
             magni, dicta impedit.</p>
         </div>
@@ -224,7 +227,7 @@
             <ion-icon name="logo-vue"></ion-icon>
           </span>
           <h4 class="service-heading">Vue</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
+          <p class="text-muted" data-trans="vue-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
             quo inventore harum ex
             magni, dicta impedit.</p>
         </div>
@@ -237,8 +240,8 @@
     <div class="proj-main-container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Portfolio</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h2 class="section-heading" data-trans="portfolio">Portfolio</h2>
+          <h3 class="section-subheading text-muted" data-trans="portfolio-desc">Lorem ipsum dolor sit amet consectetur.</h3>
         </div>
       </div>
       <div class="row proj-container">
@@ -282,7 +285,7 @@
         </div>
       </div>
       <div class="col-sm-8 col-xl-9 flex-align-center md-justify-content-start justify-content-center">
-        <p class="large text-muted  about-description col-12">Hi, I am Liraz!<br>
+        <p class="large text-muted  about-description col-12" data-trans="about-me">Hi, I am Liraz!<br>
           I own a Hummus place, really love to code and solve problems.<br>
           Contact me if you are hungry :)</p>
       </div>
@@ -382,6 +385,7 @@
   <!-- local scripts -->
   <script src="js/service/util.service.js"></script>
   <script src="js/service/proj.service.js"></script>
+  <script src="js/service/i18n.service.js"></script>
   <script src="js/proj.controller.js"></script>
 
 
