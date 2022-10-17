@@ -1,5 +1,10 @@
 'use strict'
-renderProjs()
+
+$(() => {
+  renderProjs()
+});
+
+
 
 function renderProjs() {
   var projs = getProjs()

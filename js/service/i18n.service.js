@@ -64,6 +64,44 @@ var gTrans = {
         en: 'Contact',
         he: 'צרו קשר'
     },
+    'contact-me': {
+        en: 'Contact Me',
+        he: 'צרו קשר'
+    },
+    'contact-me-desc': {
+        en: `Do you have any questions?
+        Please do not hesitate to contact me.`,
+        he:` יש לכם שאלות?
+        תרגישו חופשי לדבר איתי.`
+    },
+    'your-name': {
+        en: 'Your name',
+        he: 'שם מלא'
+    },
+    'your-email': {
+        en: 'Your email',
+        he: 'אימייל'
+    },
+    'subject': {
+        en: 'Subject',
+        he: 'נושא הפנייה'
+    },
+    'message': {
+        en: 'Your message',
+        he: 'תוכן הפנייה'
+    },
+    'send': {
+        en: 'Send',
+        he: 'שלח'
+    },
+    'liraz-name': {
+        en: 'Liraz Ganon',
+        he: 'לירז גנון'
+    },
+    'liraz-title': {
+        en: 'Lead Falafel Team',
+        he: 'מוביל צוות פלאפל'
+    },
 }
 
 
@@ -97,6 +135,7 @@ function getTrans(transKey) {
 function doTrans() {
     const els = document.querySelectorAll('[data-trans]')
     els.forEach(el => {
+        el.classList.toggle('he-font')
         const transKey = el.dataset.trans
         const trans = getTrans(transKey)
         el.innerText = trans

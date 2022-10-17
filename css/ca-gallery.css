@@ -1,3 +1,9 @@
+/* @font-face {
+    font-family: 'Rubik';
+    src: url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+    unicode-range: U+0590-U+05FF;
+} */
+
 body {
     overflow-x: hidden;
     font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -5,8 +11,12 @@ body {
     width: 100vw;
 }
 
-.rtl {
+body.rtl {
     direction: rtl;
+}
+
+.he-font{
+    font-family: 'Rubik', sans-serif !important;
 }
 
 .navbar {
@@ -108,7 +118,7 @@ h6 {
     white-space: nowrap;
     overflow: hidden;
     position: relative;
-    width: 550px;
+    width: 600px;
     direction: ltr;
 
 }
@@ -123,7 +133,7 @@ h6 span {
 }
 
 .message {
-    background-color: yellow;
+    background-color: rgb(255, 242, 0);
     color: #333;
     display: block;
     font-weight: 900;
@@ -132,7 +142,7 @@ h6 span {
     padding-left: 0.5rem;
     top: 0.2rem;
     left: 270px;
-    animation: openclose 8s ease-in-out infinite;
+    animation: openclose 11s ease-in-out infinite;
 }
 
 .word1,
@@ -152,12 +162,12 @@ h6 span {
     }
 
     15% {
-        width: 160px;
+        width: 265px;
     }
 
     30% {
         top: 0.2rem;
-        width: 160px;
+        width: 265px;
     }
 
     33% {
@@ -177,12 +187,12 @@ h6 span {
 
     48% {
         top: -4.5rem;
-        width: 280px;
+        width: 275px;
     }
 
     62% {
         top: -4.5rem;
-        width: 280px;
+        width: 275px;
     }
 
     66% {
@@ -199,12 +209,12 @@ h6 span {
 
     86% {
         top: -9rem;
-        width: 130px;
+        width: 320px;
     }
 
     95% {
         top: -9rem;
-        width: 130px;
+        width: 320px;
     }
 
     98% {
@@ -540,7 +550,7 @@ body {
     position: fixed;
     height: 100%;
     color: #f1f1f1;
-    background: linear-gradient(0deg, rgba(128, 128, 128, 1) 39%, rgba(57, 55, 55, 1) 100%);
+    background: linear-gradient(0deg, rgba(68,66,38,1) 0%, rgba(27,27,27,1) 83%);
     width: 80vw;
     right: -80vw;
     z-index: 10;
@@ -1276,11 +1286,11 @@ fieldset[disabled] .btn-primary:hover {
 }
 
 .btn-xl {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
-    padding: 20px 40px;
+    padding: 20px 30px;
     border-radius: 3px;
-    color: white;
+    color:#222222;
     border-color: #fed136;
     background-color: #fed136;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -1289,23 +1299,23 @@ fieldset[disabled] .btn-primary:hover {
 
 .btn-xl.focus,
 .btn-xl:focus {
-    color: white;
+    color:#222222;
     border-color: #b48b01;
-    background-color: #fec503;
+    background-color: #fed136;
 }
 
 .btn-xl:hover {
-    color: white;
+    color:#000000;
     border-color: #f6bf01;
-    background-color: #fec503;
+    background-color: #fee736;
 }
 
 .btn-xl.active,
 .btn-xl:active,
 .open>.btn-xl.dropdown-toggle {
-    color: white;
-    border-color: #f6bf01;
-    background-color: #fec503;
+    color:#222222;
+    border-color: #b48b01;
+    background-color: #fed136;
 }
 
 .btn-xl.active.focus,
@@ -1408,4 +1418,12 @@ article.portfolio-item {
 
 .lang-flag {
     height: 30px;
+}
+
+.contact-list-icon{
+    padding: 0;
+}
+
+.p-skill{
+    flex-grow: 1;
 }

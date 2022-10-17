@@ -20,6 +20,10 @@
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
     type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap"
+    rel="stylesheet"> -->
 
   <!-- Custom styles for this template -->
   <link href="css/ca-gallery.css" rel="stylesheet">
@@ -45,9 +49,10 @@
       <section class="mb-4">
 
         <!--Section heading-->
-        <h2 class="h2-responsive font-weight-bold text-center my-4">Contact Me</h2>
+        <h2 class="h2-responsive font-weight-bold text-center my-4" data-trans="contact-me">Contact Me</h2>
         <!--Section description-->
-        <p class="text-center w-responsive mx-auto mb-5">Do you have any questions?<br> Please do not hesitate to
+        <p class="text-center w-responsive mx-auto mb-5" data-trans="contact-me-desc">Do you have any questions?<br>
+          Please do not hesitate to
           contact me.</p>
         <div class="row">
           <!--Grid column-->
@@ -61,7 +66,7 @@
                 <div class="col-md-6">
                   <div class="md-form mb-0">
                     <input type="text" id="name" name="name" class="form-control">
-                    <label for="name" class="">Your name</label>
+                    <label for="name" class="" data-trans="your-name">Your name</label>
                   </div>
                 </div>
                 <!--Grid column-->
@@ -70,7 +75,7 @@
                 <div class="col-md-6">
                   <div class="md-form mb-0">
                     <input type="text" id="email" name="email" class="form-control">
-                    <label for="email" class="">Your email</label>
+                    <label for="email" class="" data-trans="your-email">Your email</label>
                   </div>
                 </div>
                 <!--Grid column-->
@@ -83,7 +88,7 @@
                 <div class="col-md-12">
                   <div class="md-form mb-0">
                     <input type="text" id="subject" name="subject" class="form-control">
-                    <label for="subject" class="">Subject</label>
+                    <label for="subject" class="" data-trans="subject">Subject</label>
                   </div>
                 </div>
               </div>
@@ -98,11 +103,11 @@
                   <div class="md-form">
                     <textarea type="text" id="message" name="message" rows="2"
                       class="form-control md-textarea"></textarea>
-                    <label for="message">Your message</label>
+                    <label for="message" data-trans="message">Your message</label>
                   </div>
 
                   <div class="text-center text-md-left">
-                    <button class="btn btn-dark">Send</button>
+                    <button class="btn btn-mute" data-trans="send">Send</button>
                   </div>
 
                 </div>
@@ -117,7 +122,7 @@
 
           <!--Grid column-->
           <div class="col-md-3 text-center px-0">
-            <ul class="list-unstyled mb-0">
+            <ul class="list-unstyled mb-0 contact-list-icon">
               <li class="location">
                 <i class="fa fa-map-marker fa-2x"></i>
                 <p>TLV, IL 94126</p>
@@ -156,13 +161,14 @@
             <a class="nav-link js-scroll-trigger" href="#portfolio" data-trans="portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#me" data-trans="me" >Me</a>
+            <a class="nav-link js-scroll-trigger" href="#me" data-trans="me">Me</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" onclick="openCanvas()" data-trans="contact">Contact</a>
           </li>
           <li class="nav-item">
-            <a  class="nav-link js-scroll-trigger nav-link-lang" onclick="onSetLang(gCurrLang)"><img class="lang-flag" src="img/IL.png" alt="lang" title="שנה שפה"></a>
+            <a class="nav-link js-scroll-trigger nav-link-lang" onclick="onSetLang(gCurrLang)"><img class="lang-flag"
+                src="img/IL.png" alt="lang" title="שנה שפה"></a>
           </li>
         </ul>
       </div>
@@ -179,9 +185,9 @@
           <h6>
             <span>always be</span>
             <div class="message">
-              <div class="word1">code</div>
-              <div class="word2">creating</div>
-              <div class="word3">you</div>
+              <div class="word1">Creative</div>
+              <div class="word2">Evolving</div>
+              <div class="word3">Developer</div>
             </div>
           </h6>
         </div>
@@ -197,7 +203,8 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading" data-trans="specialities">Specialities</h2>
-          <h3 class="section-subheading text-muted" data-trans="specialities-desc">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h3 class="section-subheading text-muted" data-trans="specialities-desc">Lorem ipsum dolor sit amet
+            consectetur.</h3>
         </div>
       </div>
       <div class="row text-center">
@@ -207,7 +214,8 @@
             <ion-icon name="logo-javascript"></ion-icon>
           </span>
           <h4 class="service-heading">JavaScript</h4>
-          <p class="text-muted" data-trans="javascript-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
+          <p class="text-muted p-skill" data-trans="javascript-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Minima maxime quam architecto
             quo inventore harum ex
             magni, dicta impedit.</p>
         </div>
@@ -217,7 +225,8 @@
             <ion-icon name="logo-react"></ion-icon>
           </span>
           <h4 class="service-heading">React</h4>
-          <p class="text-muted"  data-trans="react-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
+          <p class="text-muted p-skill" data-trans="react-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+            maxime quam architecto
             quo inventore harum ex
             magni, dicta impedit.</p>
         </div>
@@ -227,7 +236,8 @@
             <ion-icon name="logo-vue"></ion-icon>
           </span>
           <h4 class="service-heading">Vue</h4>
-          <p class="text-muted" data-trans="vue-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
+          <p class="text-muted p-skill" data-trans="vue-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+            maxime quam architecto
             quo inventore harum ex
             magni, dicta impedit.</p>
         </div>
@@ -241,7 +251,8 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading" data-trans="portfolio">Portfolio</h2>
-          <h3 class="section-subheading text-muted" data-trans="portfolio-desc">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h3 class="section-subheading text-muted" data-trans="portfolio-desc">Lorem ipsum dolor sit amet consectetur.
+          </h3>
         </div>
       </div>
       <div class="row proj-container">
@@ -258,8 +269,8 @@
       <div class="col-sm-4 col-xl-3">
         <div class="team-member">
           <img class="mx-auto rounded-circle" src="img/team/me.jpg" alt="">
-          <h4>Liraz Ganon</h4>
-          <p class="text-muted">Lead Falafel Team</p>
+          <h4 data-trans="liraz-name">Liraz Ganon</h4>
+          <p class="text-muted" data-trans="liraz-title">Lead Falafel Team</p>
           <ul class="list-inline social-buttons">
             <li class="list-inline-item">
               <a href="https://www.linkedin.com/in/liraz-ganon-5273b0245/">
